@@ -1,0 +1,27 @@
+
+>>> C:\Users\Ahmad\AppData\Local\Programs\Python\Python313\python.exe main.py --mode mono --sequence data/dataset-room2_512_16
+
+>>> C:\Users\Ahmad\AppData\Local\Programs\Python\Python313\python.exe main.py --mode stereo --sequence data/dataset-room2_512_16
+
+>>> C:\Users\Ahmad\AppData\Local\Programs\Python\Python313\python.exe main.py --mode mono --sequence data/dataset-corridor3_512_16
+
+>>> C:\Users\Ahmad\AppData\Local\Programs\Python\Python313\python.exe main.py --mode stereo --sequence data/dataset-corridor3_512_16
+
+>>> C:\Users\Ahmad\AppData\Local\Programs\Python\Python313\python.exe main.py --mode mono --sequence data/dataset-outdoors5_512_16
+
+>>> C:\Users\Ahmad\AppData\Local\Programs\Python\Python313\python.exe main.py --mode stereo --sequence data/dataset-outdoors5_512_16
+
+[CSV ] wrote 6 rows -> results/runtime_table.csv
+
+========================================================================
+RUNTIME TABLE
+========================================================================
+Sequence                     | Mode                   | Frames                 | Total (s)              | ms/frame               | FPS                   
+-----------------------------+------------------------+------------------------+------------------------+------------------------+-----------------------
+room2                        | mono                   | 2882                   | 142.25                 | 49.4                   | 20.26                 
+room2                        | stereo                 | 2882                   | 320.69                 | 111.3                  | 8.99                  
+corridor3                    | mono                   | 5802                   | 403.83                 | 69.6                   | 14.37                 
+corridor3                    | stereo                 | 5802                   | 721.41                 | 124.3                  | 8.04                  
+outdoors5                    | mono                   | 17747                  | 1822.82                | 102.7                  | 9.74                  
+outdoors5                    | stereo                 | 17747                  | 31108.28               | 1752.9                 | 0.57                  
+========================================================================

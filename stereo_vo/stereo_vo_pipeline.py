@@ -64,6 +64,15 @@ class StereoVO:
         min_kf_features=200,
         max_kf_trans=0.30,
         max_kf_rot_deg=12.0,
+        # ---- feature replenishment within a keyframe ----
+        # In translation-heavy scenes (corridor walks, outdoor traversals)
+        # close features leave the frame quickly while far ones remain,
+        # biasing PnP toward poorly-conditioned distant landmarks. When
+        # alive count drops below this fraction of the keyframe's initial
+        # count, we detect fresh features in cur, triangulate them, and
+        # transform them into keyframe coordinates so they join the alive
+        # set without breaking the keyframe pose anchor.
+        replenish_ratio=0.5,
     ):
         self.calib    = calib
         self.baseline = calib.baseline  # meters
@@ -123,6 +132,12 @@ class StereoVO:
         self.min_kf_features  = min_kf_features
         self.max_kf_trans     = max_kf_trans
         self.max_kf_rot_deg   = max_kf_rot_deg
+        self.replenish_ratio  = replenish_ratio
+        # Tracks the alive-feature count we will compare against to decide
+        # if replenishment is needed. Reset at each new keyframe and
+        # bumped up again whenever replenishment fires.
+        self.kf_n_anchor = 0
+        self.n_replenish = 0
 
         # Counters
         self.n_reproj_low_conf = 0   # pose emitted but flagged in status CSV
@@ -370,7 +385,38 @@ class StereoVO:
         self.kf_t = self.cur_t.copy()
         self._refresh_map(left_rect, right_rect)
         self.n_keyframes += 1
+        self.kf_n_anchor = len(self.prev_pts3d) if self.prev_pts3d is not None else 0
         return self.prev_pts3d is not None and len(self.prev_pts3d) >= 6
+
+    def _replenish_features(self, left_rect, right_rect, R_kf_cur, t_kf_cur):
+        """
+        Detect fresh features in the current frame, triangulate via
+        disparity, and transform their 3D coordinates from the current
+        frame into the keyframe frame so they extend the alive set without
+        breaking the keyframe pose anchor.
+
+        Transform: x_kf = R_kf_cur @ x_cur + t_kf_cur (T_kf_cur is the
+        inverse of the PnP-returned T_cur_kf).
+        """
+        new_pts2d_seed = self._detect_features(left_rect)
+        if len(new_pts2d_seed) == 0:
+            return False
+        new_pts3d_cur, new_pts2d_valid = self._get_3d_points(
+            left_rect, right_rect, new_pts2d_seed
+        )
+        if len(new_pts3d_cur) == 0:
+            return False
+        # x_kf = R_kf_cur @ x_cur + t_kf_cur
+        new_pts3d_kf = (R_kf_cur @ new_pts3d_cur.T).T + t_kf_cur.ravel()
+        if self.prev_pts3d is None or len(self.prev_pts3d) == 0:
+            self.prev_pts3d = new_pts3d_kf
+            self.prev_pts2d = new_pts2d_valid
+        else:
+            self.prev_pts3d = np.vstack([self.prev_pts3d, new_pts3d_kf])
+            self.prev_pts2d = np.vstack([self.prev_pts2d, new_pts2d_valid])
+        self.kf_n_anchor = len(self.prev_pts3d)
+        self.n_replenish += 1
+        return True
 
     def process_frame(self, left_img, right_img, timestamp):
         left_img  = self._preprocess(left_img)
@@ -503,6 +549,17 @@ class StereoVO:
             self.prev_pts3d = pts3d_alive
             self.prev_pts2d = pts2d_alive
 
+            # Replenishment: if alive features have attrited significantly
+            # below the keyframe's anchor count, fold in fresh features
+            # from cur. Skipped when the alive set is already healthy so
+            # this only fires in translation-heavy scenes (where attrition
+            # is asymmetric and bias toward far points hurts PnP).
+            if (self.kf_n_anchor > 0 and
+                    n_matched < self.replenish_ratio * self.kf_n_anchor):
+                self._replenish_features(
+                    left_rect, right_rect, R_kf_cur, t_kf_cur
+                )
+
         self.prev_left_rect = left_rect
         self.frame_idx     += 1
         return T
@@ -551,6 +608,7 @@ class StereoVO:
         n_skip = (self.n_track_fail + self.n_pnp_fail + self.n_step_reject)
         print(f"\n[StereoVO] Done | emitted={n_emitted}/{n} poses | "
               f"KF={self.n_keyframes} ({n/max(self.n_keyframes,1):.1f} frames/KF) | "
+              f"replenish={self.n_replenish} | "
               f"track-fail={self.n_track_fail} PnP-fail={self.n_pnp_fail} "
               f"step-reject={self.n_step_reject} "
               f"low-conf={self.n_reproj_low_conf} "

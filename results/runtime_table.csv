@@ -1,0 +1,7 @@
+sequence,mode,frames,total_sec,ms_per_frame,fps
+dataset-room2_512_16,mono,2882,142.25,49.4,20.26
+dataset-room2_512_16,stereo,2882,320.69,111.3,8.99
+dataset-corridor3_512_16,mono,5802,403.83,69.6,14.37
+dataset-corridor3_512_16,stereo,5802,721.41,124.3,8.04
+dataset-outdoors5_512_16,mono,17747,1822.82,102.7,9.74
+dataset-outdoors5_512_16,stereo,17747,31108.28,1752.9,0.57

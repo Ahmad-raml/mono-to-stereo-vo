@@ -1,0 +1,79 @@
+[DataLoader] Loaded: dataset-corridor3_512_16
+  Left  frames : 5802
+  Right frames : 5802
+  GT poses     : 7186
+[Calibration] Loaded: data/dataset-corridor3_512_16\dso\camchain.yaml
+  cam0 fx=190.98 fy=190.97 cx=254.93 cy=256.90
+  cam1 fx=190.44 fy=190.43 cx=252.60 cy=254.92
+  Baseline : 10.11 cm
+[FeatureExtractor] ORB | max_features=3000 | ratio=0.75
+[MonoVO] K_orig fx=191.0 fy=191.0
+
+[MonoVO] Running on 5802 frames...
+  Frame    0/5802 | t=[0.000, 0.000, 0.000] | tracked=2000 | failures=0
+  Frame  100/5802 | t=[-1.851, 0.308, 0.685] | tracked=1699 | failures=91
+  Frame  200/5802 | t=[-7.160, -4.763, 18.685] | tracked=847 | failures=124
+  Frame  300/5802 | t=[12.649, -22.084, 43.545] | tracked=351 | failures=132
+  Frame  400/5802 | t=[26.295, -17.766, 33.309] | tracked=287 | failures=147
+  Frame  500/5802 | t=[4.990, -28.976, 18.406] | tracked=950 | failures=166
+  Frame  600/5802 | t=[-48.640, -22.421, -16.914] | tracked=742 | failures=166
+  Frame  700/5802 | t=[-47.291, -16.202, -28.199] | tracked=291 | failures=166
+  Frame  800/5802 | t=[4.897, -22.569, -15.052] | tracked=919 | failures=166
+  Frame  900/5802 | t=[75.991, -18.848, -23.991] | tracked=431 | failures=167
+  Frame 1000/5802 | t=[70.032, -22.459, -26.817] | tracked=213 | failures=167
+  Frame 1100/5802 | t=[64.043, -24.138, 59.670] | tracked=664 | failures=167
+  Frame 1200/5802 | t=[87.279, -31.590, 45.475] | tracked=602 | failures=167
+  Frame 1300/5802 | t=[135.627, -44.456, 43.757] | tracked=332 | failures=167
+  Frame 1400/5802 | t=[149.388, -26.400, -12.144] | tracked=277 | failures=167
+  Frame 1500/5802 | t=[172.219, -26.861, 51.088] | tracked=516 | failures=167
+  Frame 1600/5802 | t=[168.847, -8.073, 129.454] | tracked=1510 | failures=167
+  Frame 1700/5802 | t=[189.686, 2.351, 90.211] | tracked=464 | failures=167
+  Frame 1800/5802 | t=[255.355, 21.603, 119.266] | tracked=467 | failures=167
+  Frame 1900/5802 | t=[235.286, 17.362, 98.933] | tracked=216 | failures=168
+  Frame 2000/5802 | t=[266.623, 18.487, 113.732] | tracked=317 | failures=168
+  Frame 2100/5802 | t=[305.214, -0.950, 132.821] | tracked=254 | failures=168
+  Frame 2200/5802 | t=[313.711, -5.595, 144.904] | tracked=805 | failures=168
+  Frame 2300/5802 | t=[338.883, -27.311, 190.392] | tracked=973 | failures=169
+  Frame 2400/5802 | t=[374.984, -41.972, 164.629] | tracked=1152 | failures=169
+  Frame 2500/5802 | t=[419.615, -43.621, 199.336] | tracked=283 | failures=169
+  Frame 2600/5802 | t=[438.139, -60.693, 256.065] | tracked=804 | failures=170
+  Frame 2700/5802 | t=[463.096, -80.862, 219.487] | tracked=1011 | failures=170
+  Frame 2800/5802 | t=[391.276, -95.240, 269.004] | tracked=202 | failures=170
+  Frame 2900/5802 | t=[365.485, -119.821, 293.864] | tracked=410 | failures=170
+  Frame 3000/5802 | t=[413.482, -143.940, 263.942] | tracked=558 | failures=170
+  Frame 3100/5802 | t=[494.642, -153.954, 287.441] | tracked=255 | failures=170
+  Frame 3200/5802 | t=[492.628, -177.764, 257.122] | tracked=250 | failures=170
+  Frame 3300/5802 | t=[498.076, -190.350, 337.553] | tracked=212 | failures=170
+  Frame 3400/5802 | t=[438.325, -184.564, 348.195] | tracked=262 | failures=170
+  Frame 3500/5802 | t=[524.029, -183.673, 329.711] | tracked=645 | failures=170
+  Frame 3600/5802 | t=[607.078, -193.988, 331.007] | tracked=418 | failures=170
+  Frame 3700/5802 | t=[557.390, -198.070, 326.605] | tracked=300 | failures=170
+  Frame 3800/5802 | t=[527.930, -216.255, 251.308] | tracked=830 | failures=170
+  Frame 3900/5802 | t=[519.777, -227.586, 183.893] | tracked=477 | failures=170
+  Frame 4000/5802 | t=[565.574, -265.566, 199.435] | tracked=257 | failures=170
+  Frame 4100/5802 | t=[553.777, -282.608, 200.757] | tracked=489 | failures=170
+  Frame 4200/5802 | t=[587.430, -313.087, 176.524] | tracked=400 | failures=170
+  Frame 4300/5802 | t=[513.758, -316.446, 174.929] | tracked=706 | failures=170
+  Frame 4400/5802 | t=[522.069, -335.798, 109.291] | tracked=277 | failures=170
+  Frame 4500/5802 | t=[539.604, -364.544, 51.470] | tracked=868 | failures=170
+  Frame 4600/5802 | t=[582.931, -395.657, 54.648] | tracked=841 | failures=170
+  Frame 4700/5802 | t=[560.658, -417.377, 22.304] | tracked=226 | failures=170
+  Frame 4800/5802 | t=[612.902, -445.348, -28.294] | tracked=445 | failures=170
+  Frame 4900/5802 | t=[595.569, -469.225, -73.852] | tracked=679 | failures=170
+  Frame 5000/5802 | t=[581.365, -502.423, -40.320] | tracked=324 | failures=171
+  Frame 5100/5802 | t=[534.499, -538.351, 18.489] | tracked=438 | failures=171
+  Frame 5200/5802 | t=[458.015, -541.560, 5.446] | tracked=422 | failures=171
+  Frame 5300/5802 | t=[466.097, -534.783, 0.362] | tracked=214 | failures=173
+  Frame 5400/5802 | t=[475.778, -527.016, -28.301] | tracked=626 | failures=184
+  Frame 5500/5802 | t=[459.507, -532.879, -4.154] | tracked=246 | failures=194
+  Frame 5600/5802 | t=[450.332, -551.956, -6.313] | tracked=203 | failures=201
+  Frame 5700/5802 | t=[453.163, -538.274, 6.447] | tracked=254 | failures=211
+  Frame 5800/5802 | t=[457.473, -537.915, 1.868] | tracked=254 | failures=275
+[TUM] Saved 5527 poses to: results/dataset-corridor3_512_16_mono_traj.txt
+[MonoVO] Status log: results/dataset-corridor3_512_16_mono_traj_status.csv
+
+[MonoVO] Done | emitted=5527/5802 poses | failures=275/5802 (4.7%)
+[MonoVO] Saved: results/dataset-corridor3_512_16_mono_traj.txt
+
+[Runtime] Sequence: dataset-corridor3_512_16 | Mode: mono | Frames: 5802 | Total: 403.83s | Per-frame: 69.6ms | FPS: 14.37
+

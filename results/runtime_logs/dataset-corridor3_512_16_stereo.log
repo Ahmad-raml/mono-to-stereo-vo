@@ -1,0 +1,87 @@
+[DataLoader] Loaded: dataset-corridor3_512_16
+  Left  frames : 5802
+  Right frames : 5802
+  GT poses     : 7186
+[Calibration] Loaded: data/dataset-corridor3_512_16\dso\camchain.yaml
+  cam0 fx=190.98 fy=190.97 cx=254.93 cy=256.90
+  cam1 fx=190.44 fy=190.43 cx=252.60 cy=254.92
+  Baseline : 10.11 cm
+[main] Stereo preset: indoor
+[main] Stereo config: {'max_depth': 20.0, 'min_disp_valid': 1.0, 'num_disparities': 64, 'block_size': 7, 'max_step_rot_deg': 25.0, 'max_step_trans': 0.5, 'min_inlier_ratio': 0.25}
+[StereoVO] Computing stereo rectification maps...
+[Calibration] Rectification | fx=191.0 | baseline=10.11 cm
+[FeatureExtractor] ORB | max_features=3000 | ratio=0.75
+[Disparity] Method: SGBM | num_disparities=64 | block_size=7
+[StereoVO] K_rect fx=190.98  |  baseline=10.11 cm
+[StereoVO] depth range=[0.10, 20.00] m  |  min_disp_valid=1.00 px  |  num_disparities=64
+[StereoVO] sanity: max_step_rot=25.0deg  max_step_trans=0.50m  min_inlier_ratio=0.25
+
+[StereoVO] Running on 5802 frames...
+[StereoVO] Initialized: 1832 3D points
+  Frame    0/5802 | t=[0.000, 0.000, 0.000]m | 3D pts=1832 | track-fail=0 | PnP-fail=0 | low-conf=0 | step-reject=0
+  Frame  100/5802 | t=[0.004, -0.022, -0.018]m | 3D pts=1839 | track-fail=0 | PnP-fail=0 | low-conf=0 | step-reject=0
+  Frame  200/5802 | t=[1.091, -0.172, -0.162]m | 3D pts=1764 | track-fail=0 | PnP-fail=0 | low-conf=0 | step-reject=0
+  Frame  300/5802 | t=[1.036, 0.271, -0.719]m | 3D pts=1787 | track-fail=0 | PnP-fail=0 | low-conf=0 | step-reject=0
+  Frame  400/5802 | t=[-0.898, -0.090, -0.606]m | 3D pts=1934 | track-fail=0 | PnP-fail=0 | low-conf=0 | step-reject=0
+  Frame  500/5802 | t=[1.714, -0.009, 0.484]m | 3D pts=1549 | track-fail=0 | PnP-fail=0 | low-conf=0 | step-reject=0
+  Frame  600/5802 | t=[-1.427, 0.083, 3.052]m | 3D pts=750 | track-fail=0 | PnP-fail=0 | low-conf=0 | step-reject=0
+  Frame  700/5802 | t=[-0.964, 0.085, 3.161]m | 3D pts=511 | track-fail=0 | PnP-fail=0 | low-conf=0 | step-reject=0
+  Frame  800/5802 | t=[2.904, 0.286, 2.827]m | 3D pts=1831 | track-fail=0 | PnP-fail=0 | low-conf=0 | step-reject=0
+  Frame  900/5802 | t=[7.668, 0.604, 4.387]m | 3D pts=1579 | track-fail=0 | PnP-fail=0 | low-conf=0 | step-reject=0
+  Frame 1000/5802 | t=[8.027, 0.808, 3.526]m | 3D pts=1059 | track-fail=0 | PnP-fail=0 | low-conf=0 | step-reject=0
+  Frame 1100/5802 | t=[10.771, 1.036, -0.809]m | 3D pts=1619 | track-fail=0 | PnP-fail=0 | low-conf=0 | step-reject=0
+  Frame 1200/5802 | t=[10.479, 0.978, 0.817]m | 3D pts=676 | track-fail=0 | PnP-fail=0 | low-conf=1 | step-reject=0
+  Frame 1300/5802 | t=[13.672, 1.127, 2.459]m | 3D pts=1574 | track-fail=0 | PnP-fail=0 | low-conf=1 | step-reject=0
+  Frame 1400/5802 | t=[13.012, 1.084, 5.290]m | 3D pts=986 | track-fail=0 | PnP-fail=0 | low-conf=1 | step-reject=0
+  Frame 1500/5802 | t=[16.114, 1.363, 2.729]m | 3D pts=1007 | track-fail=0 | PnP-fail=0 | low-conf=1 | step-reject=0
+  Frame 1600/5802 | t=[19.019, 1.436, -0.844]m | 3D pts=1264 | track-fail=0 | PnP-fail=0 | low-conf=1 | step-reject=0
+  Frame 1700/5802 | t=[18.480, 1.567, 2.447]m | 3D pts=1384 | track-fail=0 | PnP-fail=0 | low-conf=1 | step-reject=0
+  Frame 1800/5802 | t=[22.131, 1.088, 5.097]m | 3D pts=1886 | track-fail=0 | PnP-fail=0 | low-conf=1 | step-reject=0
+  Frame 1900/5802 | t=[22.264, 1.573, 4.250]m | 3D pts=534 | track-fail=0 | PnP-fail=0 | low-conf=1 | step-reject=0
+  Frame 2000/5802 | t=[24.133, 1.295, 4.567]m | 3D pts=1563 | track-fail=0 | PnP-fail=0 | low-conf=4 | step-reject=0
+  Frame 2100/5802 | t=[24.277, 1.331, 4.472]m | 3D pts=1658 | track-fail=0 | PnP-fail=0 | low-conf=4 | step-reject=0
+  Frame 2200/5802 | t=[24.766, 1.393, 3.835]m | 3D pts=658 | track-fail=0 | PnP-fail=0 | low-conf=6 | step-reject=0
+  Frame 2300/5802 | t=[27.436, 1.468, 1.484]m | 3D pts=1527 | track-fail=0 | PnP-fail=1 | low-conf=7 | step-reject=0
+  Frame 2400/5802 | t=[28.250, 1.534, 2.995]m | 3D pts=1256 | track-fail=0 | PnP-fail=1 | low-conf=7 | step-reject=0
+  Frame 2500/5802 | t=[28.328, 1.269, 5.573]m | 3D pts=1864 | track-fail=0 | PnP-fail=1 | low-conf=7 | step-reject=0
+  Frame 2600/5802 | t=[30.169, 1.432, 3.006]m | 3D pts=739 | track-fail=0 | PnP-fail=1 | low-conf=8 | step-reject=0
+  Frame 2700/5802 | t=[30.380, 1.327, 4.182]m | 3D pts=723 | track-fail=0 | PnP-fail=1 | low-conf=8 | step-reject=0
+  Frame 2800/5802 | t=[28.991, 1.904, -1.284]m | 3D pts=1624 | track-fail=0 | PnP-fail=1 | low-conf=8 | step-reject=0
+  Frame 2900/5802 | t=[30.444, 1.925, -2.246]m | 3D pts=1481 | track-fail=0 | PnP-fail=1 | low-conf=8 | step-reject=0
+  Frame 3000/5802 | t=[30.758, 1.784, 0.526]m | 3D pts=1213 | track-fail=0 | PnP-fail=1 | low-conf=8 | step-reject=0
+  Frame 3100/5802 | t=[33.655, 1.458, 2.688]m | 3D pts=1776 | track-fail=0 | PnP-fail=1 | low-conf=8 | step-reject=0
+  Frame 3200/5802 | t=[31.765, 1.826, 1.519]m | 3D pts=1175 | track-fail=0 | PnP-fail=1 | low-conf=8 | step-reject=0
+  Frame 3300/5802 | t=[36.540, 1.186, -0.915]m | 3D pts=1694 | track-fail=0 | PnP-fail=1 | low-conf=8 | step-reject=0
+  Frame 3400/5802 | t=[35.872, 1.503, -4.116]m | 3D pts=786 | track-fail=0 | PnP-fail=1 | low-conf=8 | step-reject=0
+  Frame 3500/5802 | t=[38.376, 1.112, 0.163]m | 3D pts=1943 | track-fail=0 | PnP-fail=1 | low-conf=8 | step-reject=0
+  Frame 3600/5802 | t=[38.693, 0.929, 2.721]m | 3D pts=1220 | track-fail=0 | PnP-fail=1 | low-conf=8 | step-reject=0
+  Frame 3700/5802 | t=[35.802, 1.518, -0.692]m | 3D pts=1590 | track-fail=0 | PnP-fail=1 | low-conf=8 | step-reject=0
+  Frame 3800/5802 | t=[29.132, 2.477, 0.164]m | 3D pts=1674 | track-fail=0 | PnP-fail=1 | low-conf=8 | step-reject=0
+  Frame 3900/5802 | t=[24.037, 2.729, 2.100]m | 3D pts=1185 | track-fail=0 | PnP-fail=1 | low-conf=8 | step-reject=0
+  Frame 4000/5802 | t=[24.152, 2.586, 3.499]m | 3D pts=1256 | track-fail=0 | PnP-fail=1 | low-conf=8 | step-reject=0
+  Frame 4100/5802 | t=[22.422, 3.025, 2.748]m | 3D pts=1439 | track-fail=0 | PnP-fail=1 | low-conf=8 | step-reject=0
+  Frame 4200/5802 | t=[21.735, 2.659, 5.142]m | 3D pts=1726 | track-fail=0 | PnP-fail=1 | low-conf=8 | step-reject=0
+  Frame 4300/5802 | t=[20.568, 3.503, 0.914]m | 3D pts=590 | track-fail=0 | PnP-fail=1 | low-conf=13 | step-reject=0
+  Frame 4400/5802 | t=[14.206, 3.562, 0.995]m | 3D pts=1758 | track-fail=0 | PnP-fail=1 | low-conf=13 | step-reject=0
+  Frame 4500/5802 | t=[7.985, 3.444, 1.597]m | 3D pts=1726 | track-fail=0 | PnP-fail=1 | low-conf=15 | step-reject=0
+  Frame 4600/5802 | t=[6.495, 3.067, 3.788]m | 3D pts=1959 | track-fail=0 | PnP-fail=1 | low-conf=15 | step-reject=0
+  Frame 4700/5802 | t=[4.658, 3.501, 1.161]m | 3D pts=706 | track-fail=0 | PnP-fail=1 | low-conf=15 | step-reject=0
+  Frame 4800/5802 | t=[-0.183, 2.878, 2.642]m | 3D pts=1324 | track-fail=0 | PnP-fail=1 | low-conf=16 | step-reject=0
+  Frame 4900/5802 | t=[-4.834, 2.804, 0.826]m | 3D pts=744 | track-fail=0 | PnP-fail=1 | low-conf=16 | step-reject=0
+  Frame 5000/5802 | t=[-2.608, 3.169, 0.833]m | 3D pts=316 | track-fail=0 | PnP-fail=1 | low-conf=17 | step-reject=0
+  Frame 5100/5802 | t=[2.332, 4.159, -0.191]m | 3D pts=1480 | track-fail=0 | PnP-fail=1 | low-conf=17 | step-reject=0
+  Frame 5200/5802 | t=[-0.633, 4.178, -2.835]m | 3D pts=1705 | track-fail=0 | PnP-fail=1 | low-conf=17 | step-reject=0
+  Frame 5300/5802 | t=[-0.471, 4.253, -2.632]m | 3D pts=1539 | track-fail=0 | PnP-fail=1 | low-conf=18 | step-reject=0
+  Frame 5400/5802 | t=[1.199, 4.391, -2.936]m | 3D pts=1263 | track-fail=0 | PnP-fail=1 | low-conf=18 | step-reject=0
+  Frame 5500/5802 | t=[-0.950, 3.783, -2.012]m | 3D pts=1734 | track-fail=0 | PnP-fail=1 | low-conf=19 | step-reject=0
+  Frame 5600/5802 | t=[-0.247, 4.240, -3.113]m | 3D pts=1706 | track-fail=0 | PnP-fail=1 | low-conf=19 | step-reject=0
+  Frame 5700/5802 | t=[-0.027, 4.375, -2.949]m | 3D pts=1579 | track-fail=0 | PnP-fail=1 | low-conf=19 | step-reject=0
+  Frame 5800/5802 | t=[-0.094, 4.377, -2.906]m | 3D pts=1595 | track-fail=0 | PnP-fail=1 | low-conf=19 | step-reject=0
+[TUM] Saved 5801 poses to: results/dataset-corridor3_512_16_stereo_traj.txt
+[StereoVO] Status log: results/dataset-corridor3_512_16_stereo_traj_status.csv
+
+[StereoVO] Done | emitted=5801/5802 poses | track-fail=0 PnP-fail=1 step-reject=0 low-conf=19 (skip=0.0%, low-conf=0.3%)
+[StereoVO] Saved: results/dataset-corridor3_512_16_stereo_traj.txt
+
+[Runtime] Sequence: dataset-corridor3_512_16 | Mode: stereo | Frames: 5802 | Total: 721.41s | Per-frame: 124.3ms | FPS: 8.04
+

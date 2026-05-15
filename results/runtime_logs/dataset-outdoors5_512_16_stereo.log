@@ -1,0 +1,206 @@
+[DataLoader] Loaded: dataset-outdoors5_512_16
+  Left  frames : 17747
+  Right frames : 17747
+  GT poses     : 16480
+[Calibration] Loaded: data/dataset-outdoors5_512_16\dso\camchain.yaml
+  cam0 fx=190.98 fy=190.97 cx=254.93 cy=256.90
+  cam1 fx=190.44 fy=190.43 cx=252.60 cy=254.92
+  Baseline : 10.11 cm
+[main] Stereo preset: outdoors
+[main] Stereo config: {'max_depth': 20.0, 'min_disp_valid': 1.0, 'num_disparities': 128, 'block_size': 9, 'max_step_rot_deg': 30.0, 'max_step_trans': 1.5, 'min_inlier_ratio': 0.3}
+[StereoVO] Computing stereo rectification maps...
+[Calibration] Rectification | fx=191.0 | baseline=10.11 cm
+[FeatureExtractor] ORB | max_features=3000 | ratio=0.75
+[Disparity] Method: SGBM | num_disparities=128 | block_size=9
+[StereoVO] K_rect fx=190.98  |  baseline=10.11 cm
+[StereoVO] depth range=[0.10, 20.00] m  |  min_disp_valid=1.00 px  |  num_disparities=128
+[StereoVO] sanity: max_step_rot=30.0deg  max_step_trans=1.50m  min_inlier_ratio=0.30
+
+[StereoVO] Running on 17747 frames...
+[StereoVO] Initialized: 1585 3D points
+  Frame    0/17747 | t=[0.000, 0.000, 0.000]m | 3D pts=1585 | track-fail=0 | PnP-fail=0 | low-conf=0 | step-reject=0
+  Frame  100/17747 | t=[-0.479, 0.043, 0.165]m | 3D pts=1644 | track-fail=0 | PnP-fail=0 | low-conf=0 | step-reject=0
+  Frame  200/17747 | t=[0.598, -0.036, 0.172]m | 3D pts=1531 | track-fail=0 | PnP-fail=0 | low-conf=0 | step-reject=0
+  Frame  300/17747 | t=[0.068, 0.009, -0.085]m | 3D pts=1529 | track-fail=0 | PnP-fail=0 | low-conf=0 | step-reject=0
+  Frame  400/17747 | t=[0.552, -0.314, -0.424]m | 3D pts=1531 | track-fail=0 | PnP-fail=0 | low-conf=0 | step-reject=0
+  Frame  500/17747 | t=[-0.406, -0.136, 0.016]m | 3D pts=1562 | track-fail=0 | PnP-fail=0 | low-conf=0 | step-reject=0
+  Frame  600/17747 | t=[0.537, 0.176, -0.527]m | 3D pts=1541 | track-fail=0 | PnP-fail=0 | low-conf=0 | step-reject=0
+  Frame  700/17747 | t=[0.308, 0.023, -0.175]m | 3D pts=1606 | track-fail=0 | PnP-fail=0 | low-conf=0 | step-reject=0
+  Frame  800/17747 | t=[-0.133, 0.118, -0.053]m | 3D pts=1584 | track-fail=0 | PnP-fail=0 | low-conf=0 | step-reject=0
+  Frame  900/17747 | t=[0.222, 0.372, 0.038]m | 3D pts=1424 | track-fail=0 | PnP-fail=0 | low-conf=2 | step-reject=0
+  Frame 1000/17747 | t=[-0.725, 0.588, -0.164]m | 3D pts=1727 | track-fail=0 | PnP-fail=0 | low-conf=17 | step-reject=0
+  Frame 1100/17747 | t=[-0.112, 0.515, -0.052]m | 3D pts=1672 | track-fail=0 | PnP-fail=0 | low-conf=17 | step-reject=0
+  Frame 1200/17747 | t=[1.784, -0.160, 2.475]m | 3D pts=700 | track-fail=0 | PnP-fail=2 | low-conf=17 | step-reject=0
+  Frame 1300/17747 | t=[-4.668, 0.849, 2.915]m | 3D pts=1710 | track-fail=0 | PnP-fail=2 | low-conf=21 | step-reject=0
+  Frame 1400/17747 | t=[-11.502, 1.746, 2.752]m | 3D pts=947 | track-fail=0 | PnP-fail=2 | low-conf=27 | step-reject=0
+  Frame 1500/17747 | t=[-13.997, 2.503, -1.442]m | 3D pts=1484 | track-fail=0 | PnP-fail=2 | low-conf=27 | step-reject=0
+  Frame 1600/17747 | t=[-13.410, 3.927, -7.292]m | 3D pts=1449 | track-fail=0 | PnP-fail=2 | low-conf=28 | step-reject=0
+  Frame 1700/17747 | t=[-12.879, 5.373, -12.264]m | 3D pts=1476 | track-fail=0 | PnP-fail=2 | low-conf=28 | step-reject=0
+  Frame 1800/17747 | t=[-12.763, 7.281, -18.471]m | 3D pts=1512 | track-fail=0 | PnP-fail=2 | low-conf=28 | step-reject=0
+  Frame 1900/17747 | t=[-12.696, 9.111, -24.850]m | 3D pts=1663 | track-fail=0 | PnP-fail=2 | low-conf=28 | step-reject=0
+  Frame 2000/17747 | t=[-12.911, 10.856, -29.641]m | 3D pts=1528 | track-fail=0 | PnP-fail=2 | low-conf=28 | step-reject=0
+  Frame 2100/17747 | t=[-12.051, 13.619, -35.458]m | 3D pts=1688 | track-fail=0 | PnP-fail=2 | low-conf=28 | step-reject=0
+  Frame 2200/17747 | t=[-10.844, 16.349, -40.976]m | 3D pts=1458 | track-fail=0 | PnP-fail=2 | low-conf=28 | step-reject=0
+  Frame 2300/17747 | t=[-14.388, 18.064, -44.601]m | 3D pts=1127 | track-fail=0 | PnP-fail=2 | low-conf=28 | step-reject=0
+  Frame 2400/17747 | t=[-14.389, 21.010, -47.052]m | 3D pts=1252 | track-fail=0 | PnP-fail=2 | low-conf=28 | step-reject=0
+  Frame 2500/17747 | t=[-13.911, 23.637, -50.495]m | 3D pts=1145 | track-fail=0 | PnP-fail=2 | low-conf=28 | step-reject=0
+  Frame 2600/17747 | t=[-14.127, 25.487, -52.935]m | 3D pts=1123 | track-fail=0 | PnP-fail=2 | low-conf=28 | step-reject=0
+  Frame 2700/17747 | t=[-13.639, 28.034, -55.323]m | 3D pts=1063 | track-fail=0 | PnP-fail=2 | low-conf=28 | step-reject=0
+  Frame 2800/17747 | t=[-11.155, 30.818, -59.323]m | 3D pts=1648 | track-fail=0 | PnP-fail=2 | low-conf=28 | step-reject=0
+  Frame 2900/17747 | t=[-4.853, 31.952, -61.891]m | 3D pts=1034 | track-fail=0 | PnP-fail=2 | low-conf=44 | step-reject=0
+  Frame 3000/17747 | t=[0.436, 34.587, -63.926]m | 3D pts=613 | track-fail=0 | PnP-fail=7 | low-conf=46 | step-reject=0
+  Frame 3100/17747 | t=[3.557, 37.804, -68.862]m | 3D pts=952 | track-fail=0 | PnP-fail=7 | low-conf=46 | step-reject=0
+  Frame 3200/17747 | t=[5.319, 40.667, -75.334]m | 3D pts=707 | track-fail=0 | PnP-fail=7 | low-conf=46 | step-reject=0
+  Frame 3300/17747 | t=[6.126, 42.831, -82.174]m | 3D pts=940 | track-fail=0 | PnP-fail=7 | low-conf=46 | step-reject=0
+  Frame 3400/17747 | t=[5.254, 43.970, -89.036]m | 3D pts=853 | track-fail=0 | PnP-fail=7 | low-conf=46 | step-reject=0
+  Frame 3500/17747 | t=[2.525, 44.430, -95.559]m | 3D pts=930 | track-fail=0 | PnP-fail=7 | low-conf=46 | step-reject=0
+  Frame 3600/17747 | t=[-3.312, 43.493, -99.701]m | 3D pts=760 | track-fail=0 | PnP-fail=7 | low-conf=46 | step-reject=0
+  Frame 3700/17747 | t=[-10.063, 42.086, -101.910]m | 3D pts=1101 | track-fail=0 | PnP-fail=7 | low-conf=46 | step-reject=0
+  Frame 3800/17747 | t=[-17.018, 40.094, -101.423]m | 3D pts=1121 | track-fail=0 | PnP-fail=7 | low-conf=46 | step-reject=0
+  Frame 3900/17747 | t=[-24.044, 37.588, -100.561]m | 3D pts=1191 | track-fail=0 | PnP-fail=7 | low-conf=46 | step-reject=0
+  Frame 4000/17747 | t=[-30.531, 34.908, -99.102]m | 3D pts=1240 | track-fail=0 | PnP-fail=7 | low-conf=46 | step-reject=0
+  Frame 4100/17747 | t=[-36.837, 32.274, -97.534]m | 3D pts=1316 | track-fail=0 | PnP-fail=7 | low-conf=46 | step-reject=0
+  Frame 4200/17747 | t=[-42.980, 29.404, -95.735]m | 3D pts=938 | track-fail=0 | PnP-fail=7 | low-conf=46 | step-reject=0
+  Frame 4300/17747 | t=[-48.818, 26.359, -93.683]m | 3D pts=1014 | track-fail=0 | PnP-fail=7 | low-conf=46 | step-reject=0
+  Frame 4400/17747 | t=[-54.494, 22.866, -91.665]m | 3D pts=1045 | track-fail=0 | PnP-fail=7 | low-conf=46 | step-reject=0
+  Frame 4500/17747 | t=[-59.881, 19.026, -89.274]m | 3D pts=964 | track-fail=0 | PnP-fail=7 | low-conf=46 | step-reject=0
+  Frame 4600/17747 | t=[-64.867, 14.811, -86.487]m | 3D pts=905 | track-fail=0 | PnP-fail=7 | low-conf=46 | step-reject=0
+  Frame 4700/17747 | t=[-69.356, 10.642, -82.863]m | 3D pts=1025 | track-fail=0 | PnP-fail=7 | low-conf=46 | step-reject=0
+  Frame 4800/17747 | t=[-71.368, 7.996, -77.017]m | 3D pts=1233 | track-fail=0 | PnP-fail=7 | low-conf=46 | step-reject=0
+  Frame 4900/17747 | t=[-69.056, 8.494, -70.551]m | 3D pts=1013 | track-fail=0 | PnP-fail=7 | low-conf=46 | step-reject=0
+  Frame 5000/17747 | t=[-65.806, 9.316, -64.290]m | 3D pts=1000 | track-fail=0 | PnP-fail=7 | low-conf=46 | step-reject=0
+  Frame 5100/17747 | t=[-61.999, 10.265, -58.645]m | 3D pts=909 | track-fail=0 | PnP-fail=7 | low-conf=46 | step-reject=0
+  Frame 5200/17747 | t=[-58.150, 11.185, -53.631]m | 3D pts=1000 | track-fail=0 | PnP-fail=7 | low-conf=46 | step-reject=0
+  Frame 5300/17747 | t=[-53.759, 12.503, -48.600]m | 3D pts=1214 | track-fail=0 | PnP-fail=7 | low-conf=46 | step-reject=0
+  Frame 5400/17747 | t=[-48.915, 13.829, -43.440]m | 3D pts=947 | track-fail=0 | PnP-fail=7 | low-conf=46 | step-reject=0
+  Frame 5500/17747 | t=[-43.787, 15.180, -38.530]m | 3D pts=1212 | track-fail=0 | PnP-fail=7 | low-conf=46 | step-reject=0
+  Frame 5600/17747 | t=[-38.589, 16.197, -33.806]m | 3D pts=1009 | track-fail=0 | PnP-fail=7 | low-conf=46 | step-reject=0
+  Frame 5700/17747 | t=[-33.032, 17.228, -29.540]m | 3D pts=1150 | track-fail=0 | PnP-fail=7 | low-conf=46 | step-reject=0
+  Frame 5800/17747 | t=[-27.312, 18.025, -25.134]m | 3D pts=938 | track-fail=0 | PnP-fail=7 | low-conf=46 | step-reject=0
+  Frame 5900/17747 | t=[-21.360, 18.785, -21.327]m | 3D pts=888 | track-fail=0 | PnP-fail=7 | low-conf=46 | step-reject=0
+  Frame 6000/17747 | t=[-15.211, 19.555, -17.888]m | 3D pts=1075 | track-fail=0 | PnP-fail=7 | low-conf=46 | step-reject=0
+  Frame 6100/17747 | t=[-9.197, 20.206, -14.952]m | 3D pts=1162 | track-fail=0 | PnP-fail=7 | low-conf=46 | step-reject=0
+  Frame 6200/17747 | t=[-2.815, 20.928, -12.310]m | 3D pts=1280 | track-fail=0 | PnP-fail=7 | low-conf=46 | step-reject=0
+  Frame 6300/17747 | t=[3.640, 21.205, -9.960]m | 3D pts=1010 | track-fail=0 | PnP-fail=7 | low-conf=47 | step-reject=0
+  Frame 6400/17747 | t=[10.590, 21.741, -8.253]m | 3D pts=1268 | track-fail=0 | PnP-fail=7 | low-conf=47 | step-reject=0
+  Frame 6500/17747 | t=[17.669, 22.161, -7.140]m | 3D pts=1384 | track-fail=0 | PnP-fail=7 | low-conf=47 | step-reject=0
+  Frame 6600/17747 | t=[24.755, 22.070, -6.210]m | 3D pts=1063 | track-fail=0 | PnP-fail=7 | low-conf=47 | step-reject=0
+  Frame 6700/17747 | t=[31.983, 22.023, -6.002]m | 3D pts=1007 | track-fail=0 | PnP-fail=7 | low-conf=47 | step-reject=0
+  Frame 6800/17747 | t=[39.151, 22.768, -6.792]m | 3D pts=1258 | track-fail=0 | PnP-fail=7 | low-conf=47 | step-reject=0
+  Frame 6900/17747 | t=[41.933, 27.714, -10.826]m | 3D pts=1418 | track-fail=0 | PnP-fail=7 | low-conf=47 | step-reject=0
+  Frame 7000/17747 | t=[41.007, 33.035, -15.814]m | 3D pts=925 | track-fail=0 | PnP-fail=7 | low-conf=47 | step-reject=0
+  Frame 7100/17747 | t=[39.398, 38.021, -20.862]m | 3D pts=1401 | track-fail=0 | PnP-fail=7 | low-conf=47 | step-reject=0
+  Frame 7200/17747 | t=[37.670, 41.963, -26.002]m | 3D pts=1563 | track-fail=0 | PnP-fail=7 | low-conf=47 | step-reject=0
+  Frame 7300/17747 | t=[35.819, 46.476, -30.947]m | 3D pts=1421 | track-fail=0 | PnP-fail=7 | low-conf=47 | step-reject=0
+  Frame 7400/17747 | t=[34.087, 51.248, -35.695]m | 3D pts=1493 | track-fail=0 | PnP-fail=7 | low-conf=47 | step-reject=0
+  Frame 7500/17747 | t=[31.524, 55.802, -40.304]m | 3D pts=1243 | track-fail=0 | PnP-fail=7 | low-conf=47 | step-reject=0
+  Frame 7600/17747 | t=[31.752, 59.423, -45.169]m | 3D pts=1049 | track-fail=0 | PnP-fail=7 | low-conf=49 | step-reject=0
+  Frame 7700/17747 | t=[28.412, 61.417, -46.749]m | 3D pts=1457 | track-fail=0 | PnP-fail=7 | low-conf=49 | step-reject=0
+  Frame 7800/17747 | t=[22.403, 61.295, -43.445]m | 3D pts=1432 | track-fail=0 | PnP-fail=7 | low-conf=49 | step-reject=0
+  Frame 7900/17747 | t=[16.357, 60.958, -39.918]m | 3D pts=1464 | track-fail=0 | PnP-fail=7 | low-conf=49 | step-reject=0
+  Frame 8000/17747 | t=[10.537, 61.061, -36.686]m | 3D pts=1124 | track-fail=0 | PnP-fail=7 | low-conf=49 | step-reject=0
+  Frame 8100/17747 | t=[5.006, 61.156, -32.904]m | 3D pts=1037 | track-fail=0 | PnP-fail=7 | low-conf=49 | step-reject=0
+  Frame 8200/17747 | t=[-0.363, 61.190, -29.719]m | 3D pts=1256 | track-fail=0 | PnP-fail=7 | low-conf=49 | step-reject=0
+  Frame 8300/17747 | t=[-5.677, 61.044, -26.393]m | 3D pts=1232 | track-fail=0 | PnP-fail=7 | low-conf=49 | step-reject=0
+  Frame 8400/17747 | t=[-11.012, 60.799, -23.286]m | 3D pts=1301 | track-fail=0 | PnP-fail=7 | low-conf=49 | step-reject=0
+  Frame 8500/17747 | t=[-16.264, 60.323, -19.593]m | 3D pts=1160 | track-fail=0 | PnP-fail=7 | low-conf=49 | step-reject=0
+  Frame 8600/17747 | t=[-21.257, 59.406, -16.195]m | 3D pts=1226 | track-fail=0 | PnP-fail=7 | low-conf=49 | step-reject=0
+  Frame 8700/17747 | t=[-25.885, 58.430, -12.088]m | 3D pts=1048 | track-fail=0 | PnP-fail=7 | low-conf=49 | step-reject=0
+  Frame 8800/17747 | t=[-30.238, 57.173, -8.244]m | 3D pts=951 | track-fail=0 | PnP-fail=7 | low-conf=49 | step-reject=0
+  Frame 8900/17747 | t=[-34.261, 57.050, -3.667]m | 3D pts=871 | track-fail=0 | PnP-fail=7 | low-conf=49 | step-reject=0
+  Frame 9000/17747 | t=[-38.297, 57.001, 1.062]m | 3D pts=805 | track-fail=0 | PnP-fail=7 | low-conf=53 | step-reject=0
+  Frame 9100/17747 | t=[-41.610, 57.635, 5.842]m | 3D pts=1073 | track-fail=0 | PnP-fail=7 | low-conf=53 | step-reject=0
+  Frame 9200/17747 | t=[-44.937, 58.513, 10.785]m | 3D pts=1382 | track-fail=0 | PnP-fail=7 | low-conf=53 | step-reject=0
+  Frame 9300/17747 | t=[-48.026, 59.003, 16.524]m | 3D pts=1489 | track-fail=0 | PnP-fail=7 | low-conf=53 | step-reject=0
+  Frame 9400/17747 | t=[-50.573, 58.710, 22.691]m | 3D pts=1431 | track-fail=0 | PnP-fail=7 | low-conf=53 | step-reject=0
+  Frame 9500/17747 | t=[-53.598, 58.670, 28.577]m | 3D pts=1496 | track-fail=0 | PnP-fail=7 | low-conf=53 | step-reject=0
+  Frame 9600/17747 | t=[-56.251, 58.670, 32.462]m | 3D pts=1555 | track-fail=0 | PnP-fail=9 | low-conf=76 | step-reject=0
+  Frame 9700/17747 | t=[-59.831, 59.454, 36.417]m | 3D pts=1266 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 9800/17747 | t=[-64.526, 59.737, 41.524]m | 3D pts=1154 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 9900/17747 | t=[-64.284, 58.252, 47.647]m | 3D pts=1216 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 10000/17747 | t=[-60.087, 55.733, 52.544]m | 3D pts=1223 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 10100/17747 | t=[-55.835, 52.885, 57.280]m | 3D pts=1172 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 10200/17747 | t=[-51.464, 49.546, 61.802]m | 3D pts=1119 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 10300/17747 | t=[-46.898, 45.876, 65.923]m | 3D pts=1134 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 10400/17747 | t=[-42.167, 41.822, 69.536]m | 3D pts=774 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 10500/17747 | t=[-37.331, 37.536, 72.462]m | 3D pts=1029 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 10600/17747 | t=[-31.987, 33.275, 74.494]m | 3D pts=826 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 10700/17747 | t=[-26.326, 31.814, 71.292]m | 3D pts=1065 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 10800/17747 | t=[-22.169, 32.020, 66.127]m | 3D pts=1020 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 10900/17747 | t=[-18.648, 32.932, 60.432]m | 3D pts=960 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 11000/17747 | t=[-15.845, 34.137, 54.634]m | 3D pts=1119 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 11100/17747 | t=[-13.332, 35.231, 48.724]m | 3D pts=885 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 11200/17747 | t=[-10.949, 36.516, 42.582]m | 3D pts=1187 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 11300/17747 | t=[-8.648, 37.751, 36.215]m | 3D pts=847 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 11400/17747 | t=[-6.654, 38.903, 29.813]m | 3D pts=1265 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 11500/17747 | t=[-4.709, 39.825, 23.209]m | 3D pts=1100 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 11600/17747 | t=[-3.126, 40.580, 16.615]m | 3D pts=1048 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 11700/17747 | t=[-1.835, 41.650, 9.771]m | 3D pts=924 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 11800/17747 | t=[-0.853, 42.510, 2.949]m | 3D pts=920 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 11900/17747 | t=[-0.056, 43.279, -3.732]m | 3D pts=1115 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 12000/17747 | t=[0.198, 43.855, -10.204]m | 3D pts=1122 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 12100/17747 | t=[0.288, 44.375, -16.930]m | 3D pts=804 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 12200/17747 | t=[0.207, 44.727, -23.710]m | 3D pts=955 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 12300/17747 | t=[-0.719, 45.138, -30.653]m | 3D pts=1022 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 12400/17747 | t=[-1.876, 45.156, -37.424]m | 3D pts=1407 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 12500/17747 | t=[-3.557, 45.286, -44.017]m | 3D pts=1090 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 12600/17747 | t=[-5.451, 45.101, -50.879]m | 3D pts=1006 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 12700/17747 | t=[-7.817, 44.763, -57.731]m | 3D pts=1091 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 12800/17747 | t=[-10.794, 44.610, -64.490]m | 3D pts=1046 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 12900/17747 | t=[-14.188, 44.594, -70.897]m | 3D pts=885 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 13000/17747 | t=[-18.196, 44.992, -76.729]m | 3D pts=930 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 13100/17747 | t=[-22.378, 45.193, -82.380]m | 3D pts=897 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 13200/17747 | t=[-27.039, 45.801, -87.856]m | 3D pts=951 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 13300/17747 | t=[-31.493, 45.984, -93.523]m | 3D pts=876 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 13400/17747 | t=[-36.727, 46.697, -98.660]m | 3D pts=744 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 13500/17747 | t=[-42.912, 49.363, -101.311]m | 3D pts=897 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 13600/17747 | t=[-47.952, 53.988, -99.917]m | 3D pts=727 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 13700/17747 | t=[-51.957, 58.797, -96.470]m | 3D pts=901 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 13800/17747 | t=[-55.456, 63.313, -92.139]m | 3D pts=1048 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 13900/17747 | t=[-58.730, 67.125, -87.298]m | 3D pts=1066 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 14000/17747 | t=[-61.852, 70.517, -82.043]m | 3D pts=1079 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 14100/17747 | t=[-64.345, 73.151, -76.194]m | 3D pts=700 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 14200/17747 | t=[-64.628, 74.609, -69.433]m | 3D pts=1586 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 14300/17747 | t=[-62.551, 73.768, -63.957]m | 3D pts=1328 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 14400/17747 | t=[-59.110, 71.180, -61.004]m | 3D pts=1198 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 14500/17747 | t=[-53.865, 68.449, -58.150]m | 3D pts=1449 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 14600/17747 | t=[-48.763, 65.793, -54.868]m | 3D pts=1631 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 14700/17747 | t=[-43.814, 63.174, -51.395]m | 3D pts=1582 | track-fail=0 | PnP-fail=9 | low-conf=93 | step-reject=0
+  Frame 14800/17747 | t=[-38.502, 60.683, -48.958]m | 3D pts=1494 | track-fail=0 | PnP-fail=9 | low-conf=94 | step-reject=0
+  Frame 14900/17747 | t=[-33.246, 58.474, -46.849]m | 3D pts=1422 | track-fail=0 | PnP-fail=9 | low-conf=94 | step-reject=0
+  Frame 15000/17747 | t=[-27.541, 56.276, -44.930]m | 3D pts=1372 | track-fail=0 | PnP-fail=9 | low-conf=94 | step-reject=0
+  Frame 15100/17747 | t=[-22.326, 53.913, -43.109]m | 3D pts=1385 | track-fail=0 | PnP-fail=9 | low-conf=94 | step-reject=0
+  Frame 15200/17747 | t=[-18.288, 51.575, -41.768]m | 3D pts=1386 | track-fail=0 | PnP-fail=9 | low-conf=94 | step-reject=0
+  Frame 15300/17747 | t=[-16.170, 49.319, -41.046]m | 3D pts=1307 | track-fail=0 | PnP-fail=9 | low-conf=94 | step-reject=0
+  Frame 15400/17747 | t=[-14.593, 47.041, -40.266]m | 3D pts=1262 | track-fail=0 | PnP-fail=9 | low-conf=95 | step-reject=0
+  Frame 15500/17747 | t=[-12.005, 44.894, -39.013]m | 3D pts=1188 | track-fail=0 | PnP-fail=9 | low-conf=95 | step-reject=0
+  Frame 15600/17747 | t=[-10.027, 42.428, -38.013]m | 3D pts=1317 | track-fail=0 | PnP-fail=9 | low-conf=95 | step-reject=0
+  Frame 15700/17747 | t=[-8.795, 39.947, -37.338]m | 3D pts=1292 | track-fail=0 | PnP-fail=9 | low-conf=95 | step-reject=0
+  Frame 15800/17747 | t=[-8.193, 39.235, -34.216]m | 3D pts=1262 | track-fail=0 | PnP-fail=9 | low-conf=95 | step-reject=0
+  Frame 15900/17747 | t=[-8.958, 40.211, -28.612]m | 3D pts=1560 | track-fail=0 | PnP-fail=9 | low-conf=98 | step-reject=0
+  Frame 16000/17747 | t=[-10.375, 41.847, -22.404]m | 3D pts=1531 | track-fail=0 | PnP-fail=9 | low-conf=100 | step-reject=0
+  Frame 16100/17747 | t=[-12.126, 43.336, -16.363]m | 3D pts=1009 | track-fail=0 | PnP-fail=9 | low-conf=102 | step-reject=0
+  Frame 16200/17747 | t=[-11.868, 42.533, -12.184]m | 3D pts=1361 | track-fail=0 | PnP-fail=9 | low-conf=110 | step-reject=0
+  Frame 16300/17747 | t=[-10.529, 41.664, -14.253]m | 3D pts=1223 | track-fail=0 | PnP-fail=9 | low-conf=110 | step-reject=0
+  Frame 16400/17747 | t=[-11.404, 42.180, -12.321]m | 3D pts=1265 | track-fail=0 | PnP-fail=9 | low-conf=111 | step-reject=0
+  Frame 16500/17747 | t=[-10.747, 41.887, -14.142]m | 3D pts=1590 | track-fail=0 | PnP-fail=9 | low-conf=111 | step-reject=0
+  Frame 16600/17747 | t=[-11.235, 42.399, -13.362]m | 3D pts=1264 | track-fail=0 | PnP-fail=9 | low-conf=111 | step-reject=0
+  Frame 16700/17747 | t=[-11.221, 42.380, -12.678]m | 3D pts=1611 | track-fail=0 | PnP-fail=9 | low-conf=111 | step-reject=0
+  Frame 16800/17747 | t=[-10.472, 41.782, -14.344]m | 3D pts=1346 | track-fail=0 | PnP-fail=9 | low-conf=113 | step-reject=0
+  Frame 16900/17747 | t=[-11.354, 42.549, -12.776]m | 3D pts=1450 | track-fail=0 | PnP-fail=9 | low-conf=113 | step-reject=0
+  Frame 17000/17747 | t=[-10.535, 41.756, -13.822]m | 3D pts=1592 | track-fail=0 | PnP-fail=9 | low-conf=119 | step-reject=0
+  Frame 17100/17747 | t=[-11.774, 42.333, -13.166]m | 3D pts=1459 | track-fail=0 | PnP-fail=9 | low-conf=122 | step-reject=0
+  Frame 17200/17747 | t=[-10.824, 41.807, -13.265]m | 3D pts=1481 | track-fail=0 | PnP-fail=9 | low-conf=134 | step-reject=0
+  Frame 17300/17747 | t=[-10.984, 42.161, -14.724]m | 3D pts=1339 | track-fail=0 | PnP-fail=9 | low-conf=134 | step-reject=0
+  Frame 17400/17747 | t=[-11.488, 42.230, -12.477]m | 3D pts=1388 | track-fail=0 | PnP-fail=9 | low-conf=134 | step-reject=0
+  Frame 17500/17747 | t=[-10.706, 41.895, -13.995]m | 3D pts=1205 | track-fail=0 | PnP-fail=9 | low-conf=156 | step-reject=0
+  Frame 17600/17747 | t=[-11.806, 42.475, -12.350]m | 3D pts=1322 | track-fail=0 | PnP-fail=9 | low-conf=168 | step-reject=0
+  Frame 17700/17747 | t=[-10.668, 41.824, -13.421]m | 3D pts=1490 | track-fail=0 | PnP-fail=9 | low-conf=168 | step-reject=0
+[TUM] Saved 17738 poses to: results/dataset-outdoors5_512_16_stereo_traj.txt
+[StereoVO] Status log: results/dataset-outdoors5_512_16_stereo_traj_status.csv
+
+[StereoVO] Done | emitted=17738/17747 poses | track-fail=0 PnP-fail=9 step-reject=0 low-conf=168 (skip=0.1%, low-conf=0.9%)
+[StereoVO] Saved: results/dataset-outdoors5_512_16_stereo_traj.txt
+
+[Runtime] Sequence: dataset-outdoors5_512_16 | Mode: stereo | Frames: 17747 | Total: 31108.28s | Per-frame: 1752.9ms | FPS: 0.57
+

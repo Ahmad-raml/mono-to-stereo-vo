@@ -1,0 +1,198 @@
+[DataLoader] Loaded: dataset-outdoors5_512_16
+  Left  frames : 17747
+  Right frames : 17747
+  GT poses     : 16480
+[Calibration] Loaded: data/dataset-outdoors5_512_16\dso\camchain.yaml
+  cam0 fx=190.98 fy=190.97 cx=254.93 cy=256.90
+  cam1 fx=190.44 fy=190.43 cx=252.60 cy=254.92
+  Baseline : 10.11 cm
+[FeatureExtractor] ORB | max_features=3000 | ratio=0.75
+[MonoVO] K_orig fx=191.0 fy=191.0
+
+[MonoVO] Running on 17747 frames...
+  Frame    0/17747 | t=[0.000, 0.000, 0.000] | tracked=2000 | failures=0
+  Frame  100/17747 | t=[-11.646, 5.357, -8.737] | tracked=719 | failures=6
+  Frame  200/17747 | t=[-29.911, 6.022, -11.050] | tracked=696 | failures=14
+  Frame  300/17747 | t=[-40.870, 11.771, -2.043] | tracked=655 | failures=29
+  Frame  400/17747 | t=[-60.914, -0.604, -8.298] | tracked=405 | failures=39
+  Frame  500/17747 | t=[-31.868, -8.095, 4.100] | tracked=336 | failures=46
+  Frame  600/17747 | t=[-44.968, -13.729, 16.355] | tracked=255 | failures=55
+  Frame  700/17747 | t=[-62.356, -17.096, 27.039] | tracked=243 | failures=67
+  Frame  800/17747 | t=[-71.565, -27.412, 53.188] | tracked=206 | failures=71
+  Frame  900/17747 | t=[-81.781, -34.390, 48.757] | tracked=325 | failures=87
+  Frame 1000/17747 | t=[-81.169, -30.260, 48.386] | tracked=321 | failures=116
+  Frame 1100/17747 | t=[-79.856, -19.542, 52.527] | tracked=414 | failures=143
+  Frame 1200/17747 | t=[-102.643, -61.952, 24.702] | tracked=253 | failures=172
+  Frame 1300/17747 | t=[-128.666, -141.959, 67.711] | tracked=251 | failures=172
+  Frame 1400/17747 | t=[-148.953, -219.803, 125.210] | tracked=645 | failures=172
+  Frame 1500/17747 | t=[-125.746, -290.399, 163.133] | tracked=276 | failures=172
+  Frame 1600/17747 | t=[-72.926, -357.217, 186.397] | tracked=539 | failures=174
+  Frame 1700/17747 | t=[-33.750, -393.467, 212.749] | tracked=348 | failures=196
+  Frame 1800/17747 | t=[6.403, -459.912, 238.733] | tracked=256 | failures=200
+  Frame 1900/17747 | t=[55.832, -539.109, 262.072] | tracked=515 | failures=200
+  Frame 2000/17747 | t=[97.914, -620.390, 273.884] | tracked=1453 | failures=200
+  Frame 2100/17747 | t=[139.875, -695.575, 275.695] | tracked=2000 | failures=200
+  Frame 2200/17747 | t=[192.302, -769.262, 277.272] | tracked=246 | failures=200
+  Frame 2300/17747 | t=[217.317, -839.820, 319.421] | tracked=715 | failures=205
+  Frame 2400/17747 | t=[236.701, -870.735, 327.680] | tracked=584 | failures=256
+  Frame 2500/17747 | t=[261.753, -930.073, 336.993] | tracked=407 | failures=274
+  Frame 2600/17747 | t=[277.593, -969.526, 344.928] | tracked=298 | failures=298
+  Frame 2700/17747 | t=[287.882, -1001.188, 337.864] | tracked=1565 | failures=333
+  Frame 2800/17747 | t=[333.650, -1069.545, 345.950] | tracked=654 | failures=345
+  Frame 2900/17747 | t=[369.509, -1150.453, 333.793] | tracked=476 | failures=345
+  Frame 3000/17747 | t=[399.702, -1211.146, 312.889] | tracked=652 | failures=355
+  Frame 3100/17747 | t=[401.612, -1197.069, 313.358] | tracked=299 | failures=396
+  Frame 3200/17747 | t=[444.348, -1234.236, 316.945] | tracked=882 | failures=411
+  Frame 3300/17747 | t=[503.173, -1291.379, 320.765] | tracked=625 | failures=418
+  Frame 3400/17747 | t=[548.412, -1327.634, 330.896] | tracked=539 | failures=444
+  Frame 3500/17747 | t=[571.189, -1332.979, 343.445] | tracked=1141 | failures=479
+  Frame 3600/17747 | t=[623.875, -1371.610, 398.347] | tracked=563 | failures=481
+  Frame 3700/17747 | t=[638.345, -1398.889, 432.514] | tracked=256 | failures=508
+  Frame 3800/17747 | t=[637.436, -1406.574, 463.492] | tracked=873 | failures=548
+  Frame 3900/17747 | t=[633.972, -1443.512, 536.084] | tracked=478 | failures=556
+  Frame 4000/17747 | t=[630.513, -1455.530, 588.388] | tracked=231 | failures=583
+  Frame 4100/17747 | t=[626.948, -1457.474, 629.378] | tracked=1846 | failures=633
+  Frame 4200/17747 | t=[625.429, -1472.981, 719.422] | tracked=627 | failures=636
+  Frame 4300/17747 | t=[629.643, -1489.908, 811.809] | tracked=269 | failures=636
+  Frame 4400/17747 | t=[635.815, -1512.476, 903.083] | tracked=749 | failures=637
+  Frame 4500/17747 | t=[640.971, -1538.792, 991.750] | tracked=312 | failures=639
+  Frame 4600/17747 | t=[646.507, -1560.464, 1080.120] | tracked=806 | failures=644
+  Frame 4700/17747 | t=[647.444, -1587.136, 1152.128] | tracked=203 | failures=653
+  Frame 4800/17747 | t=[619.928, -1614.847, 1215.211] | tracked=220 | failures=660
+  Frame 4900/17747 | t=[539.786, -1647.441, 1244.254] | tracked=712 | failures=663
+  Frame 5000/17747 | t=[454.672, -1678.646, 1276.410] | tracked=273 | failures=663
+  Frame 5100/17747 | t=[406.146, -1696.623, 1291.693] | tracked=205 | failures=701
+  Frame 5200/17747 | t=[347.548, -1720.578, 1322.097] | tracked=538 | failures=723
+  Frame 5300/17747 | t=[272.721, -1746.010, 1354.961] | tracked=350 | failures=731
+  Frame 5400/17747 | t=[189.862, -1778.865, 1389.684] | tracked=813 | failures=731
+  Frame 5500/17747 | t=[105.221, -1807.628, 1418.933] | tracked=310 | failures=733
+  Frame 5600/17747 | t=[27.005, -1844.089, 1457.169] | tracked=481 | failures=734
+  Frame 5700/17747 | t=[-44.663, -1871.199, 1492.377] | tracked=284 | failures=743
+  Frame 5800/17747 | t=[-119.962, -1906.528, 1541.573] | tracked=789 | failures=743
+  Frame 5900/17747 | t=[-182.027, -1936.437, 1582.693] | tracked=334 | failures=758
+  Frame 6000/17747 | t=[-241.386, -1975.607, 1616.975] | tracked=1442 | failures=770
+  Frame 6100/17747 | t=[-316.285, -2017.214, 1661.052] | tracked=683 | failures=770
+  Frame 6200/17747 | t=[-392.078, -2059.722, 1698.822] | tracked=347 | failures=771
+  Frame 6300/17747 | t=[-466.109, -2104.715, 1740.206] | tracked=386 | failures=771
+  Frame 6400/17747 | t=[-536.075, -2139.913, 1786.994] | tracked=686 | failures=772
+  Frame 6500/17747 | t=[-599.153, -2176.390, 1830.025] | tracked=443 | failures=782
+  Frame 6600/17747 | t=[-670.203, -2209.925, 1876.796] | tracked=214 | failures=785
+  Frame 6700/17747 | t=[-738.599, -2251.347, 1922.916] | tracked=366 | failures=790
+  Frame 6800/17747 | t=[-794.558, -2283.447, 1958.543] | tracked=254 | failures=811
+  Frame 6900/17747 | t=[-847.144, -2322.052, 1949.454] | tracked=227 | failures=826
+  Frame 7000/17747 | t=[-875.328, -2352.824, 1921.996] | tracked=1007 | failures=852
+  Frame 7100/17747 | t=[-929.360, -2406.896, 1869.651] | tracked=423 | failures=855
+  Frame 7200/17747 | t=[-984.751, -2463.435, 1821.199] | tracked=294 | failures=857
+  Frame 7300/17747 | t=[-1047.187, -2518.625, 1773.211] | tracked=622 | failures=857
+  Frame 7400/17747 | t=[-1099.680, -2575.276, 1736.052] | tracked=315 | failures=863
+  Frame 7500/17747 | t=[-1144.221, -2614.176, 1691.094] | tracked=534 | failures=878
+  Frame 7600/17747 | t=[-1203.170, -2659.529, 1651.039] | tracked=1490 | failures=879
+  Frame 7700/17747 | t=[-1244.066, -2692.567, 1611.364] | tracked=1302 | failures=894
+  Frame 7800/17747 | t=[-1230.783, -2749.865, 1535.267] | tracked=498 | failures=894
+  Frame 7900/17747 | t=[-1214.274, -2805.930, 1457.885] | tracked=968 | failures=894
+  Frame 8000/17747 | t=[-1197.515, -2858.061, 1377.279] | tracked=479 | failures=894
+  Frame 8100/17747 | t=[-1189.657, -2907.650, 1292.807] | tracked=406 | failures=894
+  Frame 8200/17747 | t=[-1175.561, -2959.177, 1210.556] | tracked=1063 | failures=894
+  Frame 8300/17747 | t=[-1153.347, -3006.731, 1128.332] | tracked=521 | failures=894
+  Frame 8400/17747 | t=[-1138.856, -3046.331, 1048.485] | tracked=359 | failures=899
+  Frame 8500/17747 | t=[-1124.967, -3078.744, 997.422] | tracked=203 | failures=933
+  Frame 8600/17747 | t=[-1092.161, -3127.730, 922.345] | tracked=789 | failures=934
+  Frame 8700/17747 | t=[-1052.756, -3166.231, 844.050] | tracked=473 | failures=935
+  Frame 8800/17747 | t=[-1029.900, -3212.841, 762.753] | tracked=276 | failures=936
+  Frame 8900/17747 | t=[-1003.337, -3263.150, 683.739] | tracked=988 | failures=936
+  Frame 9000/17747 | t=[-978.866, -3311.192, 606.437] | tracked=1766 | failures=936
+  Frame 9100/17747 | t=[-942.634, -3349.429, 527.479] | tracked=1080 | failures=937
+  Frame 9200/17747 | t=[-911.104, -3390.692, 445.705] | tracked=637 | failures=937
+  Frame 9300/17747 | t=[-872.060, -3427.247, 384.938] | tracked=268 | failures=948
+  Frame 9400/17747 | t=[-818.353, -3455.137, 315.523] | tracked=550 | failures=952
+  Frame 9500/17747 | t=[-773.285, -3483.841, 237.523] | tracked=413 | failures=952
+  Frame 9600/17747 | t=[-745.855, -3517.308, 152.106] | tracked=210 | failures=952
+  Frame 9700/17747 | t=[-725.094, -3551.055, 64.189] | tracked=604 | failures=952
+  Frame 9800/17747 | t=[-695.136, -3582.664, -13.644] | tracked=552 | failures=952
+  Frame 9900/17747 | t=[-651.772, -3604.516, -32.189] | tracked=971 | failures=985
+  Frame 10000/17747 | t=[-560.943, -3628.128, -40.107] | tracked=551 | failures=986
+  Frame 10100/17747 | t=[-470.678, -3650.403, -57.167] | tracked=298 | failures=986
+  Frame 10200/17747 | t=[-379.985, -3680.144, -66.275] | tracked=1276 | failures=986
+  Frame 10300/17747 | t=[-290.099, -3708.342, -80.213] | tracked=369 | failures=987
+  Frame 10400/17747 | t=[-201.794, -3739.909, -87.898] | tracked=204 | failures=988
+  Frame 10500/17747 | t=[-112.767, -3773.116, -98.606] | tracked=409 | failures=988
+  Frame 10600/17747 | t=[-46.833, -3808.538, -97.084] | tracked=964 | failures=995
+  Frame 10700/17747 | t=[-9.658, -3831.743, -42.843] | tracked=1132 | failures=1011
+  Frame 10800/17747 | t=[24.381, -3837.366, 46.247] | tracked=627 | failures=1011
+  Frame 10900/17747 | t=[50.366, -3839.466, 124.944] | tracked=296 | failures=1021
+  Frame 11000/17747 | t=[51.990, -3839.454, 148.214] | tracked=245 | failures=1088
+  Frame 11100/17747 | t=[51.421, -3838.987, 172.527] | tracked=1649 | failures=1162
+  Frame 11200/17747 | t=[59.675, -3838.878, 267.375] | tracked=466 | failures=1162
+  Frame 11300/17747 | t=[75.126, -3830.483, 356.128] | tracked=687 | failures=1168
+  Frame 11400/17747 | t=[81.192, -3833.142, 449.846] | tracked=348 | failures=1168
+  Frame 11500/17747 | t=[89.106, -3836.688, 542.087] | tracked=420 | failures=1172
+  Frame 11600/17747 | t=[100.880, -3837.214, 621.249] | tracked=213 | failures=1184
+  Frame 11700/17747 | t=[119.790, -3836.004, 713.216] | tracked=515 | failures=1187
+  Frame 11800/17747 | t=[132.045, -3842.674, 796.485] | tracked=279 | failures=1195
+  Frame 11900/17747 | t=[148.516, -3847.017, 876.086] | tracked=1039 | failures=1207
+  Frame 12000/17747 | t=[168.422, -3850.539, 961.030] | tracked=533 | failures=1214
+  Frame 12100/17747 | t=[175.887, -3861.994, 1053.350] | tracked=274 | failures=1214
+  Frame 12200/17747 | t=[191.100, -3872.880, 1148.361] | tracked=384 | failures=1214
+  Frame 12300/17747 | t=[205.436, -3878.096, 1225.722] | tracked=693 | failures=1226
+  Frame 12400/17747 | t=[224.444, -3879.211, 1304.258] | tracked=367 | failures=1239
+  Frame 12500/17747 | t=[250.547, -3874.909, 1373.993] | tracked=242 | failures=1257
+  Frame 12600/17747 | t=[290.618, -3877.323, 1456.263] | tracked=263 | failures=1261
+  Frame 12700/17747 | t=[314.614, -3877.218, 1508.352] | tracked=607 | failures=1296
+  Frame 12800/17747 | t=[342.953, -3880.133, 1588.416] | tracked=302 | failures=1308
+  Frame 12900/17747 | t=[350.895, -3878.057, 1610.491] | tracked=279 | failures=1377
+  Frame 13000/17747 | t=[369.605, -3884.089, 1646.174] | tracked=229 | failures=1426
+  Frame 13100/17747 | t=[368.466, -3885.604, 1643.399] | tracked=216 | failures=1514
+  Frame 13200/17747 | t=[413.841, -3892.478, 1708.203] | tracked=542 | failures=1526
+  Frame 13300/17747 | t=[429.669, -3892.749, 1735.048] | tracked=444 | failures=1588
+  Frame 13400/17747 | t=[446.591, -3898.365, 1777.092] | tracked=395 | failures=1634
+  Frame 13500/17747 | t=[453.530, -3904.727, 1798.484] | tracked=224 | failures=1696
+  Frame 13600/17747 | t=[448.763, -3902.600, 1857.854] | tracked=544 | failures=1723
+  Frame 13700/17747 | t=[434.317, -3908.988, 1880.946] | tracked=387 | failures=1785
+  Frame 13800/17747 | t=[421.005, -3908.053, 1900.529] | tracked=324 | failures=1853
+  Frame 13900/17747 | t=[414.803, -3906.515, 1908.610] | tracked=316 | failures=1937
+  Frame 14000/17747 | t=[382.674, -3906.331, 1961.856] | tracked=732 | failures=1963
+  Frame 14100/17747 | t=[351.188, -3883.885, 2012.028] | tracked=1266 | failures=1981
+  Frame 14200/17747 | t=[285.647, -3872.875, 2065.630] | tracked=256 | failures=1983
+  Frame 14300/17747 | t=[199.140, -3877.868, 2073.761] | tracked=1014 | failures=1987
+  Frame 14400/17747 | t=[117.211, -3881.685, 2034.270] | tracked=510 | failures=1989
+  Frame 14500/17747 | t=[48.009, -3891.065, 1993.366] | tracked=1478 | failures=2003
+  Frame 14600/17747 | t=[-41.422, -3907.816, 1960.486] | tracked=455 | failures=2003
+  Frame 14700/17747 | t=[-120.981, -3920.787, 1936.277] | tracked=633 | failures=2012
+  Frame 14800/17747 | t=[-191.131, -3936.759, 1904.026] | tracked=422 | failures=2031
+  Frame 14900/17747 | t=[-255.653, -3953.690, 1857.046] | tracked=365 | failures=2045
+  Frame 15000/17747 | t=[-320.137, -3975.613, 1798.814] | tracked=265 | failures=2053
+  Frame 15100/17747 | t=[-383.394, -3988.967, 1749.614] | tracked=1697 | failures=2069
+  Frame 15200/17747 | t=[-445.121, -4005.925, 1686.617] | tracked=575 | failures=2074
+  Frame 15300/17747 | t=[-485.288, -4020.152, 1635.678] | tracked=325 | failures=2094
+  Frame 15400/17747 | t=[-537.231, -4052.132, 1574.604] | tracked=464 | failures=2094
+  Frame 15500/17747 | t=[-594.509, -4076.000, 1529.819] | tracked=223 | failures=2108
+  Frame 15600/17747 | t=[-624.454, -4084.507, 1510.976] | tracked=849 | failures=2170
+  Frame 15700/17747 | t=[-680.758, -4117.920, 1460.970] | tracked=347 | failures=2183
+  Frame 15800/17747 | t=[-733.976, -4134.587, 1462.759] | tracked=1371 | failures=2209
+  Frame 15900/17747 | t=[-809.117, -4138.821, 1522.405] | tracked=627 | failures=2209
+  Frame 16000/17747 | t=[-881.375, -4135.656, 1589.588] | tracked=320 | failures=2209
+  Frame 16100/17747 | t=[-956.223, -4141.854, 1651.261] | tracked=618 | failures=2209
+  Frame 16200/17747 | t=[-1023.841, -4150.840, 1661.859] | tracked=410 | failures=2210
+  Frame 16300/17747 | t=[-1040.453, -4142.932, 1630.977] | tracked=247 | failures=2211
+  Frame 16400/17747 | t=[-1049.923, -4156.655, 1643.268] | tracked=446 | failures=2217
+  Frame 16500/17747 | t=[-1031.456, -4148.281, 1619.677] | tracked=319 | failures=2217
+  Frame 16600/17747 | t=[-1017.073, -4161.767, 1600.046] | tracked=1148 | failures=2223
+  Frame 16700/17747 | t=[-1023.252, -4148.422, 1597.075] | tracked=412 | failures=2223
+  Frame 16800/17747 | t=[-1032.100, -4145.875, 1578.726] | tracked=365 | failures=2225
+  Frame 16900/17747 | t=[-1026.221, -4177.098, 1561.740] | tracked=1088 | failures=2232
+  Frame 17000/17747 | t=[-1037.106, -4150.315, 1573.785] | tracked=328 | failures=2239
+  Frame 17100/17747 | t=[-1032.371, -4165.217, 1560.044] | tracked=349 | failures=2240
+  Frame 17200/17747 | t=[-1053.812, -4164.927, 1571.149] | tracked=256 | failures=2243
+  Frame 17300/17747 | t=[-1040.937, -4163.772, 1558.282] | tracked=316 | failures=2248
+  Frame 17400/17747 | t=[-1054.409, -4174.591, 1556.770] | tracked=211 | failures=2252
+  Frame 17500/17747 | t=[-1036.409, -4164.201, 1575.204] | tracked=220 | failures=2265
+  Frame 17600/17747 | t=[-1065.455, -4163.028, 1560.015] | tracked=451 | failures=2276
+  Frame 17700/17747 | t=[-1051.637, -4127.377, 1594.849] | tracked=546 | failures=2308
+[TUM] Saved 15422 poses to: results/dataset-outdoors5_512_16_mono_traj.txt
+[MonoVO] Status log: results/dataset-outdoors5_512_16_mono_traj_status.csv
+
+[MonoVO] Done | emitted=15422/17747 poses | failures=2325/17747 (13.1%)
+[MonoVO] Saved: results/dataset-outdoors5_512_16_mono_traj.txt
+
+[Runtime] Sequence: dataset-outdoors5_512_16 | Mode: mono | Frames: 17747 | Total: 1822.82s | Per-frame: 102.7ms | FPS: 9.74
+

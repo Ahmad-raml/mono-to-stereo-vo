@@ -1,0 +1,49 @@
+[DataLoader] Loaded: dataset-room2_512_16
+  Left  frames : 2882
+  Right frames : 2882
+  GT poses     : 15477
+[Calibration] Loaded: data/dataset-room2_512_16\dso\camchain.yaml
+  cam0 fx=190.98 fy=190.97 cx=254.93 cy=256.90
+  cam1 fx=190.44 fy=190.43 cx=252.60 cy=254.92
+  Baseline : 10.11 cm
+[FeatureExtractor] ORB | max_features=3000 | ratio=0.75
+[MonoVO] K_orig fx=191.0 fy=191.0
+
+[MonoVO] Running on 2882 frames...
+  Frame    0/2882 | t=[0.000, 0.000, 0.000] | tracked=2000 | failures=0
+  Frame  100/2882 | t=[8.512, -1.201, 0.609] | tracked=1334 | failures=75
+  Frame  200/2882 | t=[4.526, 1.691, 15.402] | tracked=711 | failures=83
+  Frame  300/2882 | t=[-23.661, 7.099, 23.227] | tracked=435 | failures=97
+  Frame  400/2882 | t=[-43.080, 18.740, 19.689] | tracked=1247 | failures=123
+  Frame  500/2882 | t=[-50.237, -22.249, -29.360] | tracked=392 | failures=123
+  Frame  600/2882 | t=[-40.963, -116.403, -34.070] | tracked=1568 | failures=123
+  Frame  700/2882 | t=[-44.655, -212.443, -25.947] | tracked=465 | failures=123
+  Frame  800/2882 | t=[-34.936, -302.428, -55.417] | tracked=512 | failures=123
+  Frame  900/2882 | t=[-35.521, -396.235, -48.031] | tracked=992 | failures=123
+  Frame 1000/2882 | t=[-37.861, -487.172, -74.705] | tracked=1291 | failures=123
+  Frame 1100/2882 | t=[-24.461, -579.495, -66.383] | tracked=503 | failures=123
+  Frame 1200/2882 | t=[-26.803, -672.591, -84.542] | tracked=498 | failures=123
+  Frame 1300/2882 | t=[-6.853, -763.494, -96.324] | tracked=1092 | failures=123
+  Frame 1400/2882 | t=[-23.302, -856.112, -88.316] | tracked=264 | failures=123
+  Frame 1500/2882 | t=[-11.398, -947.212, -99.339] | tracked=312 | failures=123
+  Frame 1600/2882 | t=[-13.882, -1034.063, -79.944] | tracked=261 | failures=123
+  Frame 1700/2882 | t=[-27.116, -1122.075, -101.207] | tracked=403 | failures=123
+  Frame 1800/2882 | t=[-5.074, -1203.937, -100.969] | tracked=959 | failures=123
+  Frame 1900/2882 | t=[-9.657, -1291.290, -87.478] | tracked=565 | failures=123
+  Frame 2000/2882 | t=[-9.855, -1377.555, -109.208] | tracked=817 | failures=123
+  Frame 2100/2882 | t=[16.587, -1462.748, -96.715] | tracked=391 | failures=123
+  Frame 2200/2882 | t=[3.826, -1546.383, -89.977] | tracked=946 | failures=123
+  Frame 2300/2882 | t=[19.506, -1624.647, -104.931] | tracked=1034 | failures=123
+  Frame 2400/2882 | t=[36.654, -1706.232, -86.355] | tracked=1273 | failures=123
+  Frame 2500/2882 | t=[29.174, -1791.265, -87.528] | tracked=570 | failures=123
+  Frame 2600/2882 | t=[32.982, -1878.631, -109.788] | tracked=1197 | failures=123
+  Frame 2700/2882 | t=[40.133, -1926.674, -104.056] | tracked=992 | failures=123
+  Frame 2800/2882 | t=[54.465, -1908.679, -112.000] | tracked=258 | failures=131
+[TUM] Saved 2745 poses to: results/dataset-room2_512_16_mono_traj.txt
+[MonoVO] Status log: results/dataset-room2_512_16_mono_traj_status.csv
+
+[MonoVO] Done | emitted=2745/2882 poses | failures=137/2882 (4.8%)
+[MonoVO] Saved: results/dataset-room2_512_16_mono_traj.txt
+
+[Runtime] Sequence: dataset-room2_512_16 | Mode: mono | Frames: 2882 | Total: 142.25s | Per-frame: 49.4ms | FPS: 20.26
+
