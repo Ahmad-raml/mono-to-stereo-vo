@@ -295,17 +295,24 @@ def compute_path_length(positions):
 # Start-End Drift  (Eq. 8 from project guide)
 # ─────────────────────────────────────────────
 
-def compute_start_end_drift(pos_est, ts_est, pos_gt, ts_gt):
+def compute_start_end_drift(pos_est, ts_est, pos_gt, ts_gt, with_scale=False):
     """
     Eq. (8): align start pose, measure end-pose error.
     Used for corridor3 and outdoors5 (start+end GT only).
 
+    For mono (with_scale=True): first apply a Sim3 alignment (rotation +
+    scale + translation, same as ATE) so the trajectory is in metric
+    scale before measuring drift. Without this, mono drift reflects
+    cv2.recoverPose's per-frame unit-vector accumulation rather than
+    actual VO error -- e.g. ~5800 frames of unit translation reads as
+    thousands of metres regardless of the true scene scale.
+
     Returns (drift_m, path_len_m, drift_pct) where path_len_m is the
-    total traversed distance of the *estimated* trajectory and
-    drift_pct = 100 * drift_m / path_len_m. The percent-of-path
-    figure calibrates drift against well-known VO baselines
-    (ORB-SLAM2 stereo ~1% on KITTI; classical VO without loop
-    closure typically 3-5% on long outdoor runs).
+    total traversed distance of the *estimated* trajectory (post-Sim3
+    for mono) and drift_pct = 100 * drift_m / path_len_m. The
+    percent-of-path figure calibrates drift against well-known VO
+    baselines (ORB-SLAM2 stereo ~1% on KITTI; classical VO without
+    loop closure typically 3-5% on long outdoor runs).
     """
     ie, ig = associate_trajectories(ts_est, ts_gt)
     if len(ie) < 2:
@@ -314,16 +321,29 @@ def compute_start_end_drift(pos_est, ts_est, pos_gt, ts_gt):
     pos_est_m = pos_est[ie]
     pos_gt_m  = pos_gt[ig]
 
-    # Align by translating start to GT start
-    t_offset        = pos_gt_m[0] - pos_est_m[0]
-    pos_est_shifted = pos_est_m + t_offset
+    if with_scale:
+        _, s, R, t_sim3 = umeyama_alignment(pos_est_m, pos_gt_m, with_scale=True)
+        pos_est_full = s * (R @ pos_est.T).T   + t_sim3
+        pos_est_m    = s * (R @ pos_est_m.T).T + t_sim3
+    else:
+        pos_est_full = pos_est
+
+    # Align by translating start to GT start (after Sim3 for mono)
+    t_offset             = pos_gt_m[0] - pos_est_m[0]
+    pos_est_shifted      = pos_est_m   + t_offset
+    pos_est_full_shifted = pos_est_full + t_offset
 
     drift = float(np.linalg.norm(pos_est_shifted[-1] - pos_gt_m[-1]))
 
-    # Path length over the full estimated trajectory (not just matched
-    # pairs) -- this is what the VO actually integrated, and what we
-    # divide the drift by to get a percent-of-path number.
-    path_len = compute_path_length(pos_est)
+    # Denominator: for stereo we report drift / estimated path (what the
+    # VO integrated metrically). For mono, the Sim3-scaled estimated
+    # path is determined by Umeyama (not the VO), so it isn't a fair
+    # baseline -- use the GT path over the matched range instead, which
+    # is the actual distance the camera travelled where we have GT.
+    if with_scale:
+        path_len = compute_path_length(pos_gt_m)
+    else:
+        path_len = compute_path_length(pos_est_full_shifted)
     drift_pct = (100.0 * drift / path_len) if path_len > 0 else float('nan')
 
     return drift, path_len, drift_pct
@@ -434,8 +454,11 @@ def evaluate_sequence(seq_path, seq_name, results_dir="results"):
             })
 
         # Start-end drift (Eq. 8) with path length + drift%
+        # Mono gets Sim3 scale recovery so drift is in metric units;
+        # without it the unit-vector translation from cv2.recoverPose
+        # makes mono drift dominate by scale, not by actual error.
         drift, path_len, drift_pct = compute_start_end_drift(
-            pos_est, ts_est, pos_gt, ts_gt)
+            pos_est, ts_est, pos_gt, ts_gt, with_scale=with_scale)
 
         # Displacement comparison
         gt_disp  = np.linalg.norm(pos_gt_m[-1]  - pos_gt_m[0])

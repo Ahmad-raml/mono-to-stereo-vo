@@ -189,32 +189,43 @@ python generate_slides.py
 Re-run `python evaluation/evaluate.py` and `python generate_runtime_table.py
 --skip-run` to refresh after any pipeline change.
 
-| Sequence  | Mode   | ATE (m)  | RPE-t (m) | RPE-r (°) | Drift (m) | FPS   |
-|-----------|--------|---------:|----------:|----------:|----------:|------:|
-| room2     | Mono   |   1.2335 |   12.0980 |   52.1337 |  1879.484 | 47.65 |
-| room2     | Stereo |   0.2657 |    0.0200 |    1.1870 |     1.116 | 21.46 |
-| corridor3 | Mono   |   0.8836 |   75.5449 |   52.8030 |   707.405 | 24.66 |
-| corridor3 | Stereo |   2.1306 |    0.4296 |    2.2346 |     4.333 | 22.71 |
-| outdoors5 | Mono   |   0.8553 |  287.3363 |   63.6151 |  4564.984 | 22.31 |
-| outdoors5 | Stereo |  22.3549 |    2.8982 |    6.9857 |    46.133 | 21.50 |
+| Sequence  | Mode   | ATE (m)  | RPE-t (m) | RPE-r (°) | Drift (m) | Drift % | FPS   |
+|-----------|--------|---------:|----------:|----------:|----------:|--------:|------:|
+| room2     | Mono   |   1.2335 |    9.8318 |   46.5728 |     0.698 |   0.49% | 47.65 |
+| room2     | Stereo |   0.2923 |    0.0196 |    1.1002 |     1.027 |   0.72% | 21.46 |
+| corridor3 | Mono   |   0.8836 |    8.0265 |   53.6050 |     0.497 |   1.18% | 24.66 |
+| corridor3 | Stereo |   2.8382 |    0.0184 |    1.0855 |     5.232 |   1.71% | 22.71 |
+| outdoors5 | Mono   |   0.8553 |    7.7753 |   62.9617 |     0.353 |   0.26% | 22.31 |
+| outdoors5 | Stereo |  22.3549 |    0.0370 |    1.6160 |    46.133 |   4.10% | 21.50 |
+
+> **Mono drift convention.** Mono trajectories are first aligned to GT
+> by Sim3 (rotation + scale + translation, same as ATE) before
+> measuring start–end drift, and the percent-of-path is computed
+> against GT path length. Without the Sim3 step the drift number is
+> meaningless — `cv2.recoverPose` returns unit-vector translations,
+> so per-frame integration produces a "path" in arbitrary units (e.g.
+> ~5800 units over corridor3). RPE-t already exposes the local
+> consequence of that scale ambiguity. See
+> [`compute_start_end_drift`](evaluation/evaluate.py).
 
 **Stereo RPE-t improvement vs Mono** — the headline metric of the project:
 
 | Sequence  | Mono RPE-t (m) | Stereo RPE-t (m) | Improvement |
 |-----------|---------------:|-----------------:|------------:|
-| room2     |        12.10   |          0.02    |    **606×** |
-| corridor3 |        75.54   |          0.43    |    **176×** |
-| outdoors5 |       287.34   |          2.90    |     **99×** |
+| room2     |         9.83   |          0.02    |    **503×** |
+| corridor3 |         8.03   |          0.02    |    **436×** |
+| outdoors5 |         7.78   |          0.04    |    **210×** |
 
 Notes on interpretation:
 
 - **Mono ATE looks deceptively small** because Sim3 alignment recovers a
-  per-trajectory scale. The honest mono indicators are RPE-t (the per-interval
-  error in metric units after alignment) and the Eq. 8 start-end drift.
-- **Mono RPE-r is genuinely high in room2** (~52°). This reveals essential-
+  per-trajectory scale. RPE-t (per-interval error after alignment) is the
+  honest indicator of monocular failure; Eq. 8 drift after Sim3 only
+  reflects trajectory-shape mismatch, not the unit-scale issue.
+- **Mono RPE-r is genuinely high in room2** (~46°). This reveals essential-
   matrix rotation degeneracy under low-parallax look-around motion, not a bug
   in the pipeline. A real failure mode worth discussing in the paper.
-- **Outdoors5 stereo drift of 68 m** end-to-start over a long outdoor walk on
+- **Outdoors5 stereo drift of 46 m** end-to-start over a long outdoor walk on
   a 10 cm baseline at 191 px focal length is expected for classical stereo VO
   without loop closure or BA. Worth contrasting critically with ORB-SLAM2 in
   the discussion.

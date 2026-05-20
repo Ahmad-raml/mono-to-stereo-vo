@@ -34,16 +34,18 @@ import matplotlib.pyplot as plt
 SEQUENCES = ["room2", "corridor3", "outdoors5"]
 
 ATE_MONO    = [1.2335,  0.7737,  0.9062]
-ATE_STEREO  = [0.2657,  0.0460,  0.1700]
+ATE_STEREO  = [0.2923,  0.0420,  0.1700]
 
 RPE_T_MONO   = [9.8318,  8.0265,  7.7753]
-RPE_T_STEREO = [0.0181,  0.0193,  0.0370]
+RPE_T_STEREO = [0.0196,  0.0184,  0.0370]
 
 RPE_R_MONO   = [46.5728, 53.6050, 62.9617]
-RPE_R_STEREO = [ 1.0500,  1.0655,  1.6160]
+RPE_R_STEREO = [ 1.1002,  1.0855,  1.6160]
 
-DRIFT_MONO   = [1879.484,  707.405, 4564.984]
-DRIFT_STEREO = [   1.116,    4.333,   46.133]
+# Drift: mono values are post-Sim3 (see compute_start_end_drift) so they
+# reflect trajectory-shape mismatch, not the unit-vector scale issue.
+DRIFT_MONO   = [0.698, 0.497,  0.353]
+DRIFT_STEREO = [1.027, 5.232, 46.133]
 
 # Colours per spec
 COL_MONO   = "#1A6BBF"
