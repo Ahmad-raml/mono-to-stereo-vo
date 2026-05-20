@@ -288,7 +288,6 @@ mono-to-stereo-vo/
     ├── *_gt_comparison.png
     ├── runtime_table.csv
     ├── plots/                   # bar charts
-    └── presentation.pptx
 ```
 
 
